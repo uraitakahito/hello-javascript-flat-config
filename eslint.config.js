@@ -43,4 +43,12 @@ export default [
       'quotes': ['error', 'single']
     }
   },
+  {
+    files: ['test/**', 'src/__tests__/*.test.js'],
+    rules: {
+      // Magic numbers are frequently used in tests, so disable this rule
+      // https://eslint.org/docs/latest/rules/no-magic-numbers
+      'no-magic-numbers': 'off',
+    },
+  },
 ];
